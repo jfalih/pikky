@@ -7,12 +7,8 @@ import SWIPE_ROUTES from './_routes';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 export type SwipeNavigationParamList = {
-  [SWIPE_ROUTES.CAMERA]: undefined;
+  [SWIPE_ROUTES.FAVORITE]: undefined;
   [SWIPE_ROUTES.HOME]: undefined;
-  [SWIPE_ROUTES.MAPS]: undefined;
-  [SWIPE_ROUTES.EXPLORER]: undefined;
-  [SWIPE_ROUTES.MESSAGE]: undefined;
-  [SWIPE_ROUTES.PROFILE]: undefined;
 };
 
 export type SwipeTabsProps = StaticScreenProps<
