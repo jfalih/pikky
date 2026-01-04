@@ -16,7 +16,7 @@ Watch the iOS demo video to see Pikky in action:
   </a>
 
   <a href="https://drive.google.com/file/d/YOUR_ANDROID_VIDEO_ID_HERE/view?usp=sharing">
-    <img src="./thumbnail_android.png" alt="Pikky Android Demo - Click to watch on Google Drive" width="180" height="320" />
+    <img src="./thumbnail_ios.png" alt="Pikky Android Demo - Click to watch on Google Drive" width="180" height="320" />
     <div align="center"><b>Android Demo</b></div>
   </a>
 
