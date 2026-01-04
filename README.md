@@ -8,13 +8,9 @@ Watch the iOS demo video to see Pikky in action:
 
 ### 📱 iOS Demo
 
-<video width="100%" controls>
-  <source src="./pikky_ios.mov" type="video/quicktime">
-  Your browser does not support the video tag. [Download the video](./pikky_ios.mov) or [watch on Google Drive](https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing) instead.
-</video>
+[![Pikky iOS Demo - Click to watch on Google Drive](./thumbnail_ios.png)](https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing)
 
-> 💡 **Alternative**: [📹 Watch on Google Drive](https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing) if the embedded video doesn't load.
-
+> 💡 Click the image above to watch the full demo video on Google Drive.
 
 ## ✨ Features
 
