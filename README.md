@@ -1,97 +1,323 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Pikky 📸
 
-# Getting Started
+A beautiful React Native image gallery app that lets you discover and save your favorite images from around the world.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## ✨ Features
 
-## Step 1: Start Metro
+- 🖼️ **Image Discovery**: Browse beautiful images from Picsum Photos API
+- ❤️ **Favorites**: Save your favorite images locally
+- 📱 **Swipe Navigation**: Smooth swipe-based tab navigation
+- 🔄 **Infinite Scroll**: Load more images as you scroll
+- 🌐 **Network Detection**: Real-time network status detection with offline support
+- 🎨 **Modern UI**: Beautiful gradient effects, blur effects, and smooth animations
+- ⚡ **Performance**: Optimized with FlashList for smooth scrolling
+- 🎯 **TypeScript**: Fully typed for better developer experience
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## 🎥 Video Tutorial
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+Watch this video tutorial to see how to use the Pikky app:
 
-```sh
-# Using npm
-npm start
+### Option 1: Direct Video Link (Recommended for GitHub)
 
-# OR using Yarn
-yarn start
+If your video is hosted on GitHub, you can link to it directly:
+
+```markdown
+https://github.com/yourusername/pikky/blob/main/tutorial.mov
 ```
 
-## Step 2: Build and run your app
+Or embed it directly in the README (GitHub supports video embeds):
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```markdown
+https://user-images.githubusercontent.com/your-video-url.mov
 ```
 
-### iOS
+### Option 2: YouTube/Vimeo Embed
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+Upload your `.mov` video to YouTube or Vimeo and embed it:
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+**YouTube:**
+```markdown
+[![Pikky App Tutorial](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+```
 
-```sh
+**Vimeo:**
+```markdown
+[![Pikky App Tutorial](https://vumbnail.com/VIDEO_ID.jpg)](https://vimeo.com/VIDEO_ID)
+```
+
+### Option 3: Direct File Link
+
+If you want to link directly to the video file in your repository:
+
+```markdown
+[📹 Watch Video Tutorial](./tutorial.mov)
+```
+
+Or with a thumbnail:
+
+```markdown
+[![Pikky App Tutorial](./tutorial-thumbnail.png)](./tutorial.mov)
+```
+
+### Option 4: HTML Video Tag (for GitHub)
+
+GitHub supports HTML video tags in README files:
+
+```html
+<video width="100%" controls>
+  <source src="./tutorial.mov" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
+```
+
+**Note**: For best compatibility, convert your `.mov` file to `.mp4` format:
+- `.mp4` has better browser support
+- Smaller file size
+- Works better on GitHub
+
+### 📝 Quick Start: Add Your Video Tutorial
+
+**Step 1**: Place your video file in the project root (e.g., `tutorial.mov` or `tutorial.mp4`)
+
+**Step 2**: Replace the section above with one of these options:
+
+**Option A - HTML Video Embed (Easiest, works on GitHub):**
+```html
+<video width="100%" controls>
+  <source src="./tutorial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+```
+
+**Option B - Direct Link:**
+```markdown
+[📹 Watch Video Tutorial](./tutorial.mp4)
+```
+
+**Option C - YouTube Embed (Best for large files):**
+1. Upload your video to YouTube (can be unlisted)
+2. Replace `VIDEO_ID` with your YouTube video ID:
+```markdown
+[![Pikky App Tutorial](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+```
+
+**Example with actual video:**
+```html
+<!-- Replace 'tutorial.mp4' with your actual video filename -->
+<video width="100%" controls>
+  <source src="./tutorial.mp4" type="video/mp4">
+  <p>Your browser doesn't support HTML5 video. <a href="./tutorial.mp4">Download the video</a> instead.</p>
+</video>
+```
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **Node.js** >= 20 (check with `node --version`)
+- **Yarn** or **npm** (package manager)
+- **React Native CLI** (comes with React Native)
+- **Xcode** (for iOS development on macOS)
+- **Android Studio** (for Android development)
+- **CocoaPods** (for iOS dependencies)
+
+### iOS Additional Requirements
+
+- macOS (required for iOS development)
+- Xcode Command Line Tools: `xcode-select --install`
+- CocoaPods: `sudo gem install cocoapods`
+
+### Android Additional Requirements
+
+- Java Development Kit (JDK) 17 or higher
+- Android SDK (installed via Android Studio)
+- Android Emulator or physical device
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd pikky
+```
+
+### 2. Install Dependencies
+
+```bash
+# Using Yarn (recommended)
+yarn install
+
+# OR using npm
+npm install
+```
+
+### 3. iOS Setup
+
+For iOS, you need to install CocoaPods dependencies:
+
+```bash
+# Navigate to iOS directory
+cd ios
+
+# Install CocoaPods dependencies
+bundle exec pod install
+
+# Return to root directory
+cd ..
+```
+
+**Note**: If you don't have Bundler installed, first run:
+```bash
 bundle install
 ```
 
-Then, and every time you update your native dependencies, run:
+### 4. Start Metro Bundler
 
-```sh
-bundle exec pod install
+Start the Metro bundler in one terminal:
+
+```bash
+# Using Yarn
+yarn start
+
+# OR using npm
+npm start
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+Metro will start on port 8081. Keep this terminal running.
 
-```sh
-# Using npm
-npm run ios
+### 5. Run the App
 
-# OR using Yarn
+#### iOS
+
+Open a new terminal and run:
+
+```bash
+# Using Yarn
 yarn ios
+
+# OR using npm
+npm run ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+This will:
+- Build the iOS app
+- Launch the iOS Simulator
+- Install and run the app
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+**Alternative**: Open `ios/pikky.xcworkspace` in Xcode and run from there.
 
-## Step 3: Modify your app
+#### Android
 
-Now that you have successfully run the app, let's make changes!
+Make sure you have an Android emulator running or a device connected via USB with USB debugging enabled.
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+```bash
+# Using Yarn
+yarn android
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+# OR using npm
+npm run android
+```
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+This will:
+- Build the Android app
+- Install it on your emulator/device
+- Launch the app
 
-## Congratulations! :tada:
+**Alternative**: Open `android` folder in Android Studio and run from there.
 
-You've successfully run and modified your React Native App. :partying_face:
+## 📱 Development
 
-### Now what?
+### Hot Reload
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+The app supports Fast Refresh. When you save changes:
+- The app will automatically reload
+- State is preserved (mostly)
+- Changes appear instantly
 
-# Troubleshooting
+### Manual Reload
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+- **iOS Simulator**: Press `R` twice or `Cmd + R`
+- **Android**: Press `R` twice or `Ctrl + M` (Windows/Linux) / `Cmd + M` (macOS) to open Dev Menu, then select "Reload"
 
-# Learn More
+### Debugging
 
-To learn more about React Native, take a look at the following resources:
+- **React Native Debugger**: Install React Native Debugger for advanced debugging
+- **Chrome DevTools**: Shake device/emulator → "Debug" → Opens Chrome DevTools
+- **Flipper**: For advanced debugging and network inspection
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## 🏗️ Project Structure
+
+```
+pikky/
+├── android/              # Android native code
+├── ios/                  # iOS native code
+├── src/
+│   ├── components/       # Reusable UI components
+│   │   ├── atoms/        # Basic components (buttons, text, etc.)
+│   │   └── molecules/    # Composite components
+│   ├── core/             # Core functionality
+│   │   ├── api/          # API calls
+│   │   └── http/         # HTTP client configuration
+│   ├── hooks/            # Custom React hooks
+│   ├── navigation/       # Navigation configuration
+│   ├── pages/            # Screen components
+│   │   ├── home/         # Home screen with image list
+│   │   └── favorite/     # Favorites screen
+│   └── services/         # Services and utilities
+├── native/               # Custom native modules
+│   └── toaster/          # Custom toaster module
+├── public/               # Static assets
+├── App.tsx               # Root component
+└── package.json          # Dependencies and scripts
+```
+
+## 🛠️ Technologies Used
+
+- **React Native** 0.83.1 - Mobile framework
+- **React** 19.2.0 - UI library
+- **TypeScript** - Type safety
+- **React Navigation** - Navigation library
+- **TanStack Query (React Query)** - Data fetching and caching
+- **React Native Reanimated** - Smooth animations
+- **FlashList** - High-performance list component
+- **Axios** - HTTP client
+- **MMKV** - Fast key-value storage
+- **NetInfo** - Network status detection
+- **Nitrogen** - Native module framework
+
+## 📝 Available Scripts
+
+```bash
+# Start Metro bundler
+yarn start
+
+# Run on iOS
+yarn ios
+
+# Run on Android
+yarn android
+
+# Run linter
+yarn lint
+
+# Run tests
+yarn test
+```
+
+
+## 🎬 Demo Video
+
+Watch the iOS demo video to see Pikky in action:
+
+### 📱 iOS Demo
+
+[📹 **Watch Pikky iOS Demo on Google Drive**](https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing)
+
+> 💡 **Tip**: For a better GitHub experience, you can add a thumbnail image that links to this video. Create a screenshot from your video and save it as `assets/demo-ios-thumbnail.png`, then use:
+> ```markdown
+> [![Pikky iOS Demo](./assets/demo-ios-thumbnail.png)](https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing)
+> ```
+
+
+Made with ❤️ by Jan Falih Fadhillah

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://nitro.margelo.com/nitro.schema.json",
+  "cxxNamespace": [
+    "toaster"
+  ],
+  "ios": {
+    "iosModuleName": "NitroToaster"
+  },
+  "android": {
+    "androidNamespace": [
+      "toaster"
+    ],
+    "androidCxxLibName": "NitroToaster"
+  },
+  "autolinking": {
+    "Toaster": {
+      "swift": "HybridToaster",
+      "kotlin": "HybridToaster"
+    }
+  },
+  "ignorePaths": [
+    "**/node_modules"
+  ]
+}
