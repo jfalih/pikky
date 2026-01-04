@@ -43,38 +43,23 @@ Pikky optimizes image loading and smooth scrolling using a two-pronged approach:
 
 Below is a flowchart summarizing this process:
 
+```mermaid
+flowchart TD
+    A([🚀 Start App / List]) 
+    B([🔗 Fetch Image URLs / Page])
+    C([📦 Preload & Cache Images<br/>(FastImage.preload)])
+    D([🖼️ Display Images in FlashList<br/>(Fast, Low Memory)])
+    E([👆 User Scrolls])
+    F([➕ More Images Fetched & Cached])
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -.-> C
 ```
-+---------------------+
-|   Start App/List    |
-+---------------------+
-           |
-           v
-+--------------------------+
-|  Fetch image URLs/page   |
-+--------------------------+
-           |
-           v
-+-----------------------------+
-|   Preload & cache images    |
-|   (FastImage.preload)       |
-+-----------------------------+
-           |
-           v
-+------------------------------+
-|   Display images in FlashList|
-|   (Fast, low memory)         |
-+------------------------------+
-           |
-           v
-+---------------------+
-|   User scrolls     |
-+---------------------+
-           |
-           v
-+-----------------------------+
-| More images fetched & cached |
-+-----------------------------+
-```
+
 
 **In code (simplified example):**
 
