@@ -73,7 +73,3 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-
-# Demo videos (too large for GitHub, keep on Google Drive only)
-*.mov
-pikky_ios.mov
