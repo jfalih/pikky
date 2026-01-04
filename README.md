@@ -8,18 +8,23 @@ Watch the iOS demo video to see Pikky in action:
 
 ### 📱 iOS & 🤖 Android Demos
 
-<div align="center" style="display: flex; flex-direction: row; gap: 32px;">
-
-  <a href="https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing" style="margin-right: 24px;">
-    <img src="./thumbnail_ios.png" alt="Pikky iOS Demo - Click to watch on Google Drive" width="180" height="320" />
-    <div align="center"><b>iOS Demo</b></div>
-  </a>
-
-  <a href="https://drive.google.com/file/d/YOUR_ANDROID_VIDEO_ID_HERE/view?usp=sharing">
-    <img src="./thumbnail_ios.png" alt="Pikky Android Demo - Click to watch on Google Drive" width="180" height="320" />
-    <div align="center"><b>Android Demo</b></div>
-  </a>
-
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing">
+          <img src="./thumbnail_ios.png" alt="Pikky iOS Demo - Click to watch on Google Drive" width="180" height="320" /><br />
+          <b>iOS Demo</b>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://drive.google.com/file/d/YOUR_ANDROID_VIDEO_ID_HERE/view?usp=sharing">
+          <img src="./thumbnail_ios.png" alt="Pikky Android Demo - Click to watch on Google Drive" width="180" height="320" /><br />
+          <b>Android Demo</b>
+        </a>
+      </td>
+    </tr>
+  </table>
 </div>
 
 > 💡 Click an image above to watch the full demo video on Google Drive.
