@@ -61,7 +61,7 @@ Watch the iOS demo video to see Pikky in action:
   <table>
     <tr>
       <td align="center">
-        <a href="https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing">
+        <a href="https://drive.google.com/file/d/14e1JzLSNzRxzeUbl5FpgTWSxuXpUvdd_/view?usp=sharing">
           <img src="./thumbnail_ios.png" alt="Pikky iOS Demo - Click to watch on Google Drive" width="180" height="320" /><br />
           <b>iOS Demo</b>
         </a>
