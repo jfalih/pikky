@@ -6,13 +6,23 @@ A beautiful React Native image gallery app that lets you discover and save your 
 
 Watch the iOS demo video to see Pikky in action:
 
-### 📱 iOS Demo
+### 📱 iOS & 🤖 Android Demos
 
-<a href="https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing">
-  <img src="./thumbnail_ios.png" alt="Pikky iOS Demo - Click to watch on Google Drive" width="360" height="640" />
-</a>
+<div align="center" style="display: flex; flex-direction: row; gap: 32px;">
 
-> 💡 Click the image above to watch the full demo video on Google Drive.
+  <a href="https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing" style="margin-right: 24px;">
+    <img src="./thumbnail_ios.png" alt="Pikky iOS Demo - Click to watch on Google Drive" width="180" height="320" />
+    <div align="center"><b>iOS Demo</b></div>
+  </a>
+
+  <a href="https://drive.google.com/file/d/YOUR_ANDROID_VIDEO_ID_HERE/view?usp=sharing">
+    <img src="./thumbnail_android.png" alt="Pikky Android Demo - Click to watch on Google Drive" width="180" height="320" />
+    <div align="center"><b>Android Demo</b></div>
+  </a>
+
+</div>
+
+> 💡 Click an image above to watch the full demo video on Google Drive.
 
 ## ✨ Features
 
