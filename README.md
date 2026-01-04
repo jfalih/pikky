@@ -48,7 +48,7 @@ flowchart LR
     F -- loops back --> C
 ```
 
-> **TL;DR:**   
+> **Quick Summary:**  
 > Pikky preloads and caches images before displaying them in a performant infinite FlashList, resulting in fast, smooth, and seamless image gallery browsing.
 
 ## 🎬 Demo Video
