@@ -2,6 +2,20 @@
 
 A beautiful React Native image gallery app that lets you discover and save your favorite images from around the world.
 
+## 🎬 Demo Video
+
+Watch the iOS demo video to see Pikky in action:
+
+### 📱 iOS Demo
+
+<video width="100%" controls>
+  <source src="./pikky_ios.mov" type="video/quicktime">
+  Your browser does not support the video tag. [Download the video](./pikky_ios.mov) or [watch on Google Drive](https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing) instead.
+</video>
+
+> 💡 **Alternative**: [📹 Watch on Google Drive](https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing) if the embedded video doesn't load.
+
+
 ## ✨ Features
 
 - 🖼️ **Image Discovery**: Browse beautiful images from Picsum Photos API
@@ -207,20 +221,5 @@ yarn lint
 # Run tests
 yarn test
 ```
-
-
-## 🎬 Demo Video
-
-Watch the iOS demo video to see Pikky in action:
-
-### 📱 iOS Demo
-
-[📹 **Watch Pikky iOS Demo on Google Drive**](https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing)
-
-> 💡 **Tip**: For a better GitHub experience, you can add a thumbnail image that links to this video. Create a screenshot from your video and save it as `assets/demo-ios-thumbnail.png`, then use:
-> ```markdown
-> [![Pikky iOS Demo](./assets/demo-ios-thumbnail.png)](https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing)
-> ```
-
 
 Made with ❤️ by Jan Falih Fadhillah
