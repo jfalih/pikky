@@ -48,35 +48,6 @@ flowchart LR
     F -- loops back --> C
 ```
 
-
-
-**In code (simplified example):**
-
-```tsx
-import FastImage from 'react-native-fast-image';
-import { FlashList } from '@shopify/flash-list';
-
-const imageUrls = [...]; // fetched from API
-
-// Preload images on fetch
-FastImage.preload(
-  imageUrls.map(url => ({ uri: url }))
-);
-
-// Render
-<FlashList
-  data={imageUrls}
-  renderItem={({ item }) => (
-    <FastImage
-      source={{ uri: item }}
-      style={{ width: 120, height: 120 }}
-      resizeMode={FastImage.resizeMode.cover}
-    />
-  )}
-  estimatedItemSize={120}
-/>
-```
-
 > **TL;DR:**   
 > Pikky preloads and caches images before displaying them in a performant infinite FlashList, resulting in fast, smooth, and seamless image gallery browsing.
 
