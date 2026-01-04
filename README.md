@@ -8,7 +8,9 @@ Watch the iOS demo video to see Pikky in action:
 
 ### 📱 iOS Demo
 
-[![Pikky iOS Demo - Click to watch on Google Drive](./thumbnail_ios.png)](https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing)
+<a href="https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing">
+  <img src="./thumbnail_ios.png" alt="Pikky iOS Demo - Click to watch on Google Drive" width="320" height="180" />
+</a>
 
 > 💡 Click the image above to watch the full demo video on Google Drive.
 
