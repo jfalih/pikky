@@ -29,6 +29,85 @@ Watch the iOS demo video to see Pikky in action:
 
 > 💡 Click an image above to watch the full demo video on Google Drive.
 
+## 🖼️ Image Caching & Preloading Flow
+
+Pikky optimizes image loading and smooth scrolling using a two-pronged approach:
+
+1. **Cache & Preload Images First**  
+   - Images are preloaded from network using a cache-aware library (`react-native-fast-image` or similar), so they're stored locally and ready to display when the user scrolls.
+   - This reduces jank and improves performance, especially on slow networks.
+
+2. **Efficient List Rendering with FlashList**  
+   - `FlashList` (from `@shopify/flash-list`) is used to render image lists efficiently.
+   - It only renders visible items plus a small buffer, minimizing memory and computation costs even for very large lists.
+
+Below is a flowchart summarizing this process:
+
+```
++---------------------+
+|   Start App/List    |
++---------------------+
+           |
+           v
++--------------------------+
+|  Fetch image URLs/page   |
++--------------------------+
+           |
+           v
++-----------------------------+
+|   Preload & cache images    |
+|   (FastImage.preload)       |
++-----------------------------+
+           |
+           v
++------------------------------+
+|   Display images in FlashList|
+|   (Fast, low memory)         |
++------------------------------+
+           |
+           v
++---------------------+
+|   User scrolls     |
++---------------------+
+           |
+           v
++-----------------------------+
+| More images fetched & cached |
++-----------------------------+
+```
+
+**In code (simplified example):**
+
+```tsx
+import FastImage from 'react-native-fast-image';
+import { FlashList } from '@shopify/flash-list';
+
+const imageUrls = [...]; // fetched from API
+
+// Preload images on fetch
+FastImage.preload(
+  imageUrls.map(url => ({ uri: url }))
+);
+
+// Render
+<FlashList
+  data={imageUrls}
+  renderItem={({ item }) => (
+    <FastImage
+      source={{ uri: item }}
+      style={{ width: 120, height: 120 }}
+      resizeMode={FastImage.resizeMode.cover}
+    />
+  )}
+  estimatedItemSize={120}
+/>
+```
+
+> **TL;DR:**   
+> Pikky preloads and caches images before displaying them in a performant infinite FlashList, resulting in fast, smooth, and seamless image gallery browsing.
+
+
+
 ## ✨ Features
 
 - 🖼️ **Image Discovery**: Browse beautiful images from Picsum Photos API
