@@ -2,39 +2,13 @@
 
 A beautiful React Native image gallery app that lets you discover and save your favorite images from around the world.
 
-## 🎬 Demo Video
-
-Watch the iOS demo video to see Pikky in action:
-
-### 📱 iOS & 🤖 Android Demos
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <a href="https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing">
-          <img src="./thumbnail_ios.png" alt="Pikky iOS Demo - Click to watch on Google Drive" width="180" height="320" /><br />
-          <b>iOS Demo</b>
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://drive.google.com/file/d/YOUR_ANDROID_VIDEO_ID_HERE/view?usp=sharing">
-          <img src="./thumbnail_ios.png" alt="Pikky Android Demo - Click to watch on Google Drive" width="180" height="320" /><br />
-          <b>Android Demo</b>
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
-
-> 💡 Click an image above to watch the full demo video on Google Drive.
 
 ## 🖼️ Image Caching & Preloading Flow
 
 Pikky optimizes image loading and smooth scrolling using a two-pronged approach:
 
 1. **Cache & Preload Images First**  
-   - Images are preloaded from network using a cache-aware library (`react-native-fast-image` or similar), so they're stored locally and ready to display when the user scrolls.
+   - Images are preloaded from network using a cache-aware library (`@d11/react-native-fast-image`), so they're stored locally and ready to display when the user scrolls.
    - This reduces jank and improves performance, especially on slow networks.
 
 2. **Efficient List Rendering with FlashList**  
@@ -106,7 +80,32 @@ FastImage.preload(
 > **TL;DR:**   
 > Pikky preloads and caches images before displaying them in a performant infinite FlashList, resulting in fast, smooth, and seamless image gallery browsing.
 
+## 🎬 Demo Video
 
+Watch the iOS demo video to see Pikky in action:
+
+### 📱 iOS & 🤖 Android Demos
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://drive.google.com/file/d/10i4v6gDYkCaDv3nj1Z3BTdGbtRU_vaZ1/view?usp=sharing">
+          <img src="./thumbnail_ios.png" alt="Pikky iOS Demo - Click to watch on Google Drive" width="180" height="320" /><br />
+          <b>iOS Demo</b>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://drive.google.com/file/d/YOUR_ANDROID_VIDEO_ID_HERE/view?usp=sharing">
+          <img src="./thumbnail_ios.png" alt="Pikky Android Demo - Click to watch on Google Drive" width="180" height="320" /><br />
+          <b>Android Demo</b>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+> 💡 Click an image above to watch the full demo video on Google Drive.
 
 ## ✨ Features
 
